@@ -9,7 +9,12 @@
         </VehiclePrototypeConfiguration>
         <VehiclePrototypeConfiguration label="IDM2" length="8" maximum_deceleration="9">
             <AccelerationModelType>
-                <ModelParameterIDM v0="50" T="1" s0="2" delta="4" a="4" b="1.5" />
+                <ModelParameterIDM v0="50" T="10" s0="2" delta="4" a="4" b="1.5" />
+            </AccelerationModelType>
+        </VehiclePrototypeConfiguration>
+       <VehiclePrototypeConfiguration label="IDM3" length="8" maximum_deceleration="9">
+            <AccelerationModelType>
+                <ModelParameterIDM v0="50" T="1.1" s0="2" delta="4" a="4" b="1.5" />
             </AccelerationModelType>
         </VehiclePrototypeConfiguration>
     </VehiclePrototypes >
@@ -18,25 +23,14 @@
             <TrafficComposition>
                 <VehicleType label="IDM1" fraction="0.5" />
                 <VehicleType label="IDM2" fraction="0.5" />
-
+                <VehicleType label="IDM3" fraction="0.5" />
             </TrafficComposition>
-            <Road id="1" />
         </Simulation>
         <Routes>
             <Route label="main">
                 <Road id="1" />
             </Route>
         </Routes>
-        <OutputConfiguration>
-            <FloatingCarOutput n_timestep="5" route="main">
-                <FloatingCar number="7" />
-                <FloatingCar number="12" />
-                <FloatingCar number="17" />
-                <FloatingCar number="22" />
-                <FloatingCar number="26" />
-            </FloatingCarOutput>
-            <Trajectories dt="1" route="main" />
-        </OutputConfiguration>
     </Scenario>
 </Movsim>
 
