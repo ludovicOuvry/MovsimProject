@@ -4,21 +4,20 @@
     <VehiclePrototypes>
         <VehiclePrototypeConfiguration label="ACC1" length="8" maximum_deceleration="9">
             <AccelerationModelType>
-                <ModelParameterACC v0="33.33" T="1" s0="2" s1="0" delta="4" a="1.0" b="1.5" coolness="1" />
+                <ModelParameterACC v0="0" T="2" s0="2" s1="0" delta="25" a="25" b="1.5" coolness="1" />
             </AccelerationModelType>
             <LaneChangeModelType />
         </VehiclePrototypeConfiguration>
     </VehiclePrototypes>
     <Scenario network_filename="OneROAD.xodr">
-        <Simulation timestep="0.2" duration="10000" >
+        <Simulation timestep="1" duration="10000000" >
             <TrafficComposition>
                 <VehicleType label="ACC1" fraction="1" />
             </TrafficComposition>
             <Road id="1">
                 <TrafficSource logging="true">
-                    <Inflow t="0" q_per_hour="400" v="30" />
+                    <Inflow t="0" q_per_hour="120" v="1" />
                 </TrafficSource>
-                <!-- improve vehicle performance at inflow -->
             </Road>
         </Simulation>
 

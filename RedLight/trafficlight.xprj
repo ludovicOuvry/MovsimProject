@@ -33,9 +33,6 @@
                 <Phase duration="40">
                     <TrafficLightState type="firstLight" status="Red" />
                 </Phase>
-                <Phase duration="2">
-                    <TrafficLightState type="firstLight" status="RedGreen" />
-                </Phase>
             </ControllerGroup>
         </TrafficLights>
     </Scenario>
