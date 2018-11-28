@@ -3,8 +3,7 @@
     <RoadInitialConditions id="1">
         <MicroscopicInitialConditions>
             <VehicleInitialCondition position="0" speed="0" label="IDM2"/>
-            <VehicleInitialCondition position="20" speed="0" label="IDM1"/>
-            <VehicleInitialCondition position="1000" speed="0" label="Obstacle"/>
+            <VehicleInitialCondition position="20" speed="50" label="IDM1"/>
             <!-- obstacle shifts floating car numbers -->
             
         </MicroscopicInitialConditions>
