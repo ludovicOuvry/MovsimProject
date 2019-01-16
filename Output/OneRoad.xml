@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MovsimInitialConditions>
+    <RoadInitialConditions id="1">
+        <MacroscopicInitialConditions>
+            <MacroCondition position="10" density_per_km="2" speed="30" />
+        </MacroscopicInitialConditions>>
+    </RoadInitialConditions>
+</MovsimInitialConditions>
+

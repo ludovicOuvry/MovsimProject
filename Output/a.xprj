@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) Martin Treiber, Arne Kesting 2011 -->
+<Movsim>
+    <VehiclePrototypes>
+        <VehiclePrototypeConfiguration label="ACC1" length="8" maximum_deceleration="9">
+            <AccelerationModelType>
+               <ModelParameterIDM v0="20" T="1" s0="20" delta="4" a="4" b="1.5" />
+            </AccelerationModelType>
+            <LaneChangeModelType />
+        </VehiclePrototypeConfiguration>
+    </VehiclePrototypes>
+    <Scenario network_filename="a.xodr">
+        <Simulation timestep="0.09" duration="10000000" >
+            <TrafficComposition>
+                <VehicleType label="ACC1" fraction="1" />
+            </TrafficComposition>
+            <Road id="1">
+               <TrafficSource logging="true">
+                    <Inflow t="70" q_per_hour="60" v="50" />
+                    <Inflow t="119" q_per_hour="30" v="0" />
+                </TrafficSource>
+            </Road>
+        </Simulation>
+         <Routes>
+            <Route label="all">
+                <Road id="1" />
+            </Route>
+        </Routes>
+        <OutputConfiguration>
+            <Trajectories dt="1" start_time="0" end_time="120" route="all" />
+        </OutputConfiguration>
+
+    </Scenario>
+</Movsim>
+
