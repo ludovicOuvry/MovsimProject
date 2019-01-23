@@ -9,7 +9,7 @@
             <LaneChangeModelType />
         </VehiclePrototypeConfiguration>
     </VehiclePrototypes>
-    <Scenario network_filename="Exercice3Cor.xodr" >
+    <Scenario network_filename="Exercice3.xodr" >
         <Simulation timestep="0.5">
            <TrafficComposition>
                     <VehicleType label="ACC1" fraction="1" />
