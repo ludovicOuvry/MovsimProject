@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MovsimInitialConditions>
+    <RoadInitialConditions id="1">
+        <MicroscopicInitialConditions>
+            <VehicleInitialCondition position="0" speed="0" label="IDM3"/>
+             <!--<VehicleInitialCondition position="20" speed="50" label="IDM1"/> -->
+            <!-- obstacle shifts floating car numbers -->
+            
+        </MicroscopicInitialConditions>
+    </RoadInitialConditions>
+    <RoadInitialConditions id="2">
+        <MicroscopicInitialConditions>
+            <VehicleInitialCondition position="0" speed="0" label="IDM2"/>
+        <!--<VehicleInitialCondition position="20" speed="50" label="IDM1"/> -->
+            <!-- obstacle shifts floating car numbers -->
+            
+        </MicroscopicInitialConditions>
+    </RoadInitialConditions>
+</MovsimInitialConditions>
+

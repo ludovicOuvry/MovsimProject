@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Movsim>
+    <VehiclePrototypes >
+      <!-- a completer -->
+    </VehiclePrototypes>
+    <Scenario network_filename="Exercice4.xodr" initialconditionsfilename = "initial_Condition.xml">
+        <!-- a completer -->
+    </Scenario>
+</Movsim>
